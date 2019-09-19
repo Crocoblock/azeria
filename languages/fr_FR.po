@@ -1,0 +1,416 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: azeria 1.0.2\n"
+"POT-Creation-Date: 2015-10-19 19:17+0200\n"
+"PO-Revision-Date: 2015-10-21 20:02+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: __;_e;_x;esc_attr_e;_n;esc_html_e;esc_html__;"
+"esc_attr__\n"
+"Last-Translator: \n"
+"Language: fr\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oups&nbsp;! Cette page est introuvable."
+
+#: 404.php:19
+msgid ""
+"It looks like nothing was found at this location. Maybe try to use a search?"
+msgstr "Essayez d’utiliser la recherche."
+
+#: comments.php:38 comments.php:60
+msgid "Comment navigation"
+msgstr "Navigation des commentaires"
+
+#: comments.php:41 comments.php:63
+msgid "Older Comments"
+msgstr "&larr; Commentaires plus anciens"
+
+#: comments.php:42 comments.php:64
+msgid "Newer Comments"
+msgstr "Commentaires plus récents &rarr;"
+
+#: comments.php:76
+msgid "Comments are closed."
+msgstr "Les commentaires sont fermés."
+
+#: comments.php:81
+msgid "Comment*"
+msgstr "Un commentaire"
+
+#: comments.php:82
+msgid "Leave a Reply"
+msgstr "Laisser une réponse"
+
+#: comments.php:83
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Laisser un commentaire à %s"
+
+#: footer.php:43
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: footer.php:43
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Propulsé par %s"
+
+#: footer.php:45
+#, php-format
+msgid "Theme: %1$s by <a href=\"%2$s\" rel=\"nofollow\">Tefox</a>."
+msgstr "Thème : %1$s par <a href=\"%2$s\" rel=\"nofollow\">Tefox</a>."
+
+#: functions.php:98
+msgid "Primary Menu"
+msgstr "Menu principal"
+
+#: functions.php:140
+msgid "Sidebar"
+msgstr "Colonne latérale"
+
+#: functions.php:149
+msgid "Footer Sidebar Left"
+msgstr "Barre du pied de page"
+
+#: functions.php:158
+msgid "Footer Sidebar Midlle"
+msgstr "Pied de page Sidebar Midlle"
+
+#: functions.php:167
+msgid "Footer Sidebar Right"
+msgstr "Footer Right sidebar"
+
+#: functions.php:215 functions.php:221 functions.php:227
+msgid "on"
+msgstr "dans"
+
+#: header.php:24
+msgid "Skip to content"
+msgstr "Aller au contenu principal"
+
+#: header.php:35
+msgid "Menu"
+msgstr "Menu"
+
+#: inc/customizer.php:42
+msgid "Header Logo"
+msgstr "Logo de l’en-tête"
+
+#: inc/customizer.php:54
+msgid "Logo Image"
+msgstr "Image du logo"
+
+#: inc/customizer.php:65
+msgid "Slider"
+msgstr "Slider"
+
+#: inc/customizer.php:76
+msgid "Enable/disable slider"
+msgstr "Activer/désactiver le curseur"
+
+#: inc/customizer.php:90 inc/customizer.php:244
+msgid "Slider visibility"
+msgstr "Visibilité du curseur"
+
+#: inc/customizer.php:96
+msgid "Only on Front page"
+msgstr "Uniquement sur la première page"
+
+#: inc/customizer.php:97
+msgid "On all pages"
+msgstr "Sur toutes les pages"
+
+#: inc/customizer.php:108
+msgid "Get slides from"
+msgstr "Obtenir des diapositives à partir de"
+
+#: inc/customizer.php:116
+msgid "Recent Posts (Default)"
+msgstr "Messages récents (par défaut)"
+
+#: inc/customizer.php:117
+msgid "Sticky Posts (Recommended)"
+msgstr "Sticky messages (recommandés)"
+
+#: inc/customizer.php:118
+msgid "Specific Category"
+msgstr "D'une catégorie spécifique"
+
+#: inc/customizer.php:130
+msgid "Category slug to get slides from (only if Specific Category selected)"
+msgstr ""
+"Limace de catégorie pour obtenir les diapositives (seulement si la "
+"catégorie sélectionnée)"
+
+#: inc/customizer.php:144
+msgid "Slides number to show"
+msgstr "Nombre de diapositives à afficher"
+
+#: inc/customizer.php:163
+msgid "Show/hide slider banner"
+msgstr "Bannière de curseur afficher/masquer"
+
+#: inc/customizer.php:172 inc/customizer.php:299 inc/template-actions.php:77
+#: inc/template-tags.php:337
+msgid "Read"
+msgstr "Lire"
+
+#: inc/customizer.php:177
+msgid "Banner read more button text"
+msgstr "Lire le texte du bouton plus de bannière"
+
+#: inc/customizer.php:191
+msgid "Show/hide control arrows"
+msgstr "Afficher/masquer les flèches de contrôle"
+
+#: inc/customizer.php:205
+msgid "Show/hide pager control"
+msgstr "Afficher/masquer contrôle pager"
+
+#: inc/customizer.php:219
+msgid "Select animation type"
+msgstr "Choisissez votre type d'animation."
+
+#: inc/customizer.php:225
+msgid "Slide"
+msgstr "Diapositive"
+
+#: inc/customizer.php:226
+msgid "Fade"
+msgstr "Fondu"
+
+#: inc/customizer.php:233
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/customizer.php:250
+msgid "Only excerpt"
+msgstr "Extrait seulement"
+
+#: inc/customizer.php:251
+msgid "Full content"
+msgstr "Contenu complet"
+
+#: inc/customizer.php:262
+msgid "Loop page: show featured image"
+msgstr "Page de boucle : image de voir la vedette"
+
+#: inc/customizer.php:276
+msgid "Single page: show featured image"
+msgstr "Seule page : image de voir la vedette"
+
+#: inc/customizer.php:290
+msgid "Loop page: show read more button"
+msgstr "Page de boucle : Voir la lire plus de bouton"
+
+#: inc/customizer.php:304
+msgid "Loop page: read more button text"
+msgstr "Page de boucle : lire le texte du bouton plus"
+
+#: inc/customizer.php:318
+msgid "Sidebar position"
+msgstr "Position de la barre latérale"
+
+#: inc/customizer.php:324
+msgid "Right"
+msgstr "Droite"
+
+#: inc/customizer.php:325
+msgid "Left"
+msgstr "Gauche"
+
+#: inc/customizer.php:332
+msgid "Footer"
+msgstr "Pied de page"
+
+#: inc/customizer.php:343
+msgid "Set custom copyright text"
+msgstr "Texte du Copyright personnalisé"
+
+#: inc/customizer.php:353
+msgid "About box"
+msgstr "À propos de"
+
+#: inc/customizer.php:364
+msgid "Enable About box in sidebar"
+msgstr "Activer sur la boîte dans la barre latérale"
+
+#: inc/customizer.php:373 inc/template-actions.php:175
+msgid "About Me"
+msgstr "A propos de moi"
+
+#: inc/customizer.php:378
+msgid "Enter sidebar about box title"
+msgstr "Entrer dans la barre latérale sur le titre de la boîte"
+
+#: inc/customizer.php:393
+msgid "About Image"
+msgstr "Sur l'Image"
+
+#: inc/customizer.php:401 inc/template-actions.php:177
+msgid "Hello! And welcome to my personal website!"
+msgstr "Salut! Et Bienvenue sur mon site perso !"
+
+#: inc/customizer.php:406
+msgid "Set about box message text"
+msgstr "Mis sur le texte du message box"
+
+#: inc/customizer.php:416
+msgid "Follow box"
+msgstr "Suivez boîte"
+
+#: inc/customizer.php:427
+msgid "Enable Follow box in sidebar"
+msgstr "Cochez la case de suivi dans la barre latérale"
+
+#: inc/customizer.php:436 inc/template-actions.php:206
+msgid "Follow Me"
+msgstr "Me suivre"
+
+#: inc/customizer.php:441
+msgid "Enter follow about box title"
+msgstr "Entrez Suivez sur titre de boîte"
+
+#: inc/customizer.php:464
+#, php-format
+msgid "Link to %s account:"
+msgstr "Lien vers %s compte :"
+
+#: inc/extras.php:36
+msgid "Facebook"
+msgstr "Lien Facebook"
+
+#: inc/extras.php:41
+msgid "Twitter"
+msgstr "Suivez-nous sur Twitter"
+
+#: inc/extras.php:46
+msgid "Google +"
+msgstr "Google +"
+
+#: inc/extras.php:51
+msgid "Instagram"
+msgstr "Instagram"
+
+#: inc/extras.php:56
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: inc/extras.php:61
+msgid "Dribbble"
+msgstr "Lien Dribble"
+
+#: inc/extras.php:79
+msgid "Pingback:"
+msgstr "Rétrolien :"
+
+#: inc/extras.php:79
+msgid "Edit"
+msgstr "Modifier"
+
+#: inc/extras.php:93
+msgid "ago"
+msgstr "il y a"
+
+#: inc/extras.php:109
+msgid "Your comment is awaiting moderation."
+msgstr "Votre commentaire est en attente de modération."
+
+#: inc/template-actions.php:247
+msgid "Name"
+msgstr "Nom"
+
+#: inc/template-actions.php:248
+msgid "Email"
+msgstr "Adresse de contact"
+
+#: inc/template-actions.php:249
+msgid "Website"
+msgstr "Site"
+
+#: inc/template-tags.php:57
+msgid "Leave a comment"
+msgstr "Laisser un commentaire"
+
+#: inc/template-tags.php:57
+msgid "1 Comment"
+msgstr "Un commentaire"
+
+#: inc/template-tags.php:57
+msgid "% Comments"
+msgstr "% commentaires"
+
+#: inc/template-tags.php:69 inc/template-tags.php:85
+msgid ", "
+msgstr ","
+
+#: inc/template-tags.php:71
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Publié dans  %1$s"
+
+#: inc/template-tags.php:87
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Identifié %1$s"
+
+#: inc/template-tags.php:173
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+"Continuer la lecture<span class=\"screen-reader-text\"> de %s</span>&nbsp;"
+"<span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:178 template-parts/content-page.php:18
+#: template-parts/content-single.php:35
+msgid "Pages:"
+msgstr "Pages&nbsp;:"
+
+#: search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour %s"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Rien de trouvé"
+
+#: template-parts/content-none.php:20
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Prêt à publier votre premier article&nbsp;? <a href=\"%1$s\">Lancez-vous</"
+"a>&nbsp;!"
+
+#: template-parts/content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Désolé, mais rien ne correspond à votre recherche. Veuillez réessayer avec "
+"des mots différents."
+
+#: template-parts/content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"Il semblerait que nous ne soyons pas en mesure de trouver votre contenu. "
+"Essayez en lançant une recherche."
+
+#: template-parts/content-single.php:46
+msgid "Prev"
+msgstr "Précédent"
+
+#: template-parts/content-single.php:47
+msgid "Next"
+msgstr "Suivant"

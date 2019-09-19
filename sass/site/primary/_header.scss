@@ -1,0 +1,44 @@
+.site-branding {
+	text-align: center;
+	padding: 70px 0 45px;
+}
+
+.site-logo {
+	font-family: $font__logo;
+	@include font-size(4.08);
+	line-height: 1;
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+	&-link {
+		text-decoration: none;
+		color: $color__text-headings;
+		&:hover,
+		&:active,
+		&:focus,
+		&:visited {
+			color: $color__text-headings;
+		}
+	}
+	&:after {
+		content: "";
+		height: 1px;
+		background-color: $color__text-headings;
+		width: 50%;
+		min-width: 30px;
+		margin: 10px auto 10px;
+		display: block;
+	}
+}
+
+.site-description {
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: -1px;
+	@include font-size(1.15);
+	color: #686868;
+}

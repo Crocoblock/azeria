@@ -1,0 +1,27 @@
+.wp-caption {
+	margin-bottom: 30px;
+	max-width: 100%;
+
+	img[class*="wp-image-"] {
+		@include center-block;
+	}
+
+	.wp-caption-text {
+		padding: 5px 10px;
+		background: $color__link-hover;
+		color: #fff;
+		a {
+			color: #fff;
+			&:hover,
+			&:active,
+			&:focus,
+			&:visited {
+				color: #fff;
+			}
+		}
+	}
+}
+
+.wp-caption-text {
+	text-align: center;
+}

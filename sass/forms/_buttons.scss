@@ -1,0 +1,51 @@
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	display: inline-block;
+	border: none;
+	border-radius: 0;
+	background: $color__link-hover;
+	box-shadow: none;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	@include font-size(1.54);
+	line-height: 1;
+	padding: 10px 20px;
+	text-shadow: none;
+	transition: all 200ms ease-out;
+	text-transform: uppercase;
+	font-family: $font__alt;
+	font-weight: bold;
+	vertical-align: top;
+
+	&:hover {
+		background: $color__link;
+		color: #fff;
+	}
+
+	&:active,
+	&:focus,
+	&:visited {
+		color: #fff;
+	}
+	.etry-more-btn & {
+		min-width: 130px;
+	}
+}
+
+.button {
+	&:after {
+		content: "\f105";
+		font-family: FontAwesome;
+		display: inline-block;
+		padding: 0 0 0 7px;
+		margin: 0 -7px 0 0;
+	}
+}
+
+input.search-submit {
+	vertical-align: top;
+}

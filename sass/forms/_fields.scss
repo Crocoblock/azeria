@@ -1,0 +1,37 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+textarea,
+select {
+	color: $color__text-input;
+	border: 1px solid $color__border-input;
+	background: #f3f3f3;
+	border-radius: 0;
+	transition: all 200ms linear;
+	max-width: 100%;
+
+	&:focus {
+		color: $color__text-input-focus;
+		outline: none;
+		box-shadow: 0 0 4px rgba(0,0,0,.1) inset;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+select {
+	padding: 6px 15px;
+}
+
+textarea {
+	padding: 6px 15px;
+	resize:vertical;
+	width: 100%;
+}
