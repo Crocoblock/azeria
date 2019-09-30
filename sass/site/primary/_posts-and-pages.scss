@@ -99,6 +99,9 @@
 }
 
 .entry-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 65px;
 	height: 65px;
 	line-height: 65px;

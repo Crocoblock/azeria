@@ -207,18 +207,20 @@ function azeria_follow_box() {
 	$title_html = ( ! empty( $title ) ) ? sprintf( '<h4 class="widget-title">%s</h4>', sanitize_text_field( $title ) ) : '';
 
 	$social_list = '';
-	$item_format = '<div class="custom-box-follow-item"><a href="%1$s" class="item-%3$s"><i class="%2$s"></i></a></div>';
+	$item_format = '<div class="custom-box-follow-item"><a href="%1$s" class="item-%3$s">%2$s</a></div>';
 
 	foreach ( $socials as $net => $data ) {
 		
-		$data = wp_parse_args( $data, array( 'label' => '', 'icon' => '', 'default' => '' ) );
+		$data = wp_parse_args( $data, array( 'label' => '', 'icon' => '', 'is_svg_icon' => false, 'default' => '' ) );
 		$url  = azeria_get_option( 'follow_' . $net, $data['default'] );
 
 		if ( ! $url ) {
 			continue;
 		}
 
-		$social_list .= sprintf( $item_format, esc_url( $url ), esc_attr( $data['icon'] ), esc_attr( $net ) );
+		$icon_html = $data['is_svg_icon'] ? azeria_get_social_icon_svg( $data['icon'] ) : sprintf( '<i class="%s"></i>', esc_attr( $data['icon'] ) );
+
+		$social_list .= sprintf( $item_format, esc_url( $url ), $icon_html, esc_attr( $net ) );
 
 	}
 

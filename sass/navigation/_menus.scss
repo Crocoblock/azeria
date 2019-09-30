@@ -336,21 +336,31 @@ button.menu-toggle {
 
 .navigation {
 	&.pagination {
-		text-align: center;
 		font-size: 0;
 		line-height: 0;
+		text-align: center;
+
+		.nav-links {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+
 		.page-numbers {
-			display: inline-block;
-			background: #cacaca;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 42px;
 			height: 42px;
 			line-height: 42px;
-			width: 42px;
+			background: #cacaca;
 			color: #fff;
 			text-align: center;
 			font-size: 20px;
 			font-family: $font__alt;
 			font-weight: bold;
 			text-decoration: none;
+			padding: 0 5px;
 			margin: 0 5px;
 			&:hover {
 				background: $color__link-hover;

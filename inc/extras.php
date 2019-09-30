@@ -33,35 +33,41 @@ function azeria_allowed_socials() {
 		'azeria_allowed_socials',
 		array(
 			'facebook' => array(
-				'label'   => __( 'Facebook', 'azeria' ),
-				'icon'    => 'fa fa-facebook',
-				'default' => 'https://www.facebook.com/'
+				'label'       => __( 'Facebook', 'azeria' ),
+				'icon'        => 'facebook',
+				'is_svg_icon' => true,
+				'default'     => 'https://www.facebook.com/',
 			),
 			'twitter' => array(
-				'label'   => __( 'Twitter', 'azeria' ),
-				'icon'    => 'fa fa-twitter',
-				'default' => 'https://twitter.com/'
+				'label'       => __( 'Twitter', 'azeria' ),
+				'icon'        => 'twitter',
+				'is_svg_icon' => true,
+				'default'     => 'https://twitter.com/',
 			),
 			'google-plus' => array(
-				'label'   => __( 'Google +', 'azeria' ),
-				'icon'    => 'fa fa-google-plus',
-				'default' => 'https://plus.google.com/'
+				'label'       => __( 'Google +', 'azeria' ),
+				'icon'        => 'google-plus',
+				'is_svg_icon' => true,
+				'default'     => 'https://plus.google.com/',
 			),
 			'instagram' => array(
-				'label'   => __( 'Instagram', 'azeria' ),
-				'icon'    => 'fa fa-instagram',
-				'default' => 'https://instagram.com/'
+				'label'       => __( 'Instagram', 'azeria' ),
+				'icon'        => 'instagram',
+				'is_svg_icon' => true,
+				'default'     => 'https://instagram.com/',
 			),
 			'pinterest' => array(
-				'label'   => __( 'Pinterest', 'azeria' ),
-				'icon'    => 'fa fa-pinterest',
-				'default' => 'https://www.pinterest.com/'
+				'label'       => __( 'Pinterest', 'azeria' ),
+				'icon'        => 'pinterest',
+				'is_svg_icon' => true,
+				'default'     => 'https://www.pinterest.com/',
 			),
 			'dribbble' => array(
-				'label'   => __( 'Dribbble', 'azeria' ),
-				'icon'    => 'fa fa-dribbble',
-				'default' => 'https://dribbble.com/'
-			)
+				'label'       => __( 'Dribbble', 'azeria' ),
+				'icon'        => 'dribbble',
+				'is_svg_icon' => true,
+				'default'     => 'https://dribbble.com/',
+			),
 		)
 	);
 

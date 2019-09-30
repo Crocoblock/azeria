@@ -16,7 +16,9 @@ $color__dribble: #ea4c89;
 		display: inline-block;
 		margin: 0 1px 1px 0;
 		> a {
-			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 			width: 45px;
 			height: 45px;
 			line-height: 45px;

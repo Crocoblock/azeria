@@ -17,7 +17,9 @@ function azeria_post_author() {
 		esc_html( get_the_author() )
 	);
 
-	echo '<span class="entry-meta-item author"><i class="fa fa-user"></i> ' . $author . '</span>';
+	$icon = azeria_get_icon_svg( 'author' );
+
+	echo '<span class="entry-meta-item author">' . $icon . ' ' . $author . '</span>';
 }
 
 /**
@@ -40,7 +42,9 @@ function azeria_post_date() {
 
 	$posted_on = '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>';
 
-	echo '<span class="entry-meta-item posted-on"><i class="fa fa-clock-o"></i> ' . $posted_on . '</span>'; // WPCS: XSS OK.
+	$icon = azeria_get_icon_svg( 'time' );
+
+	echo '<span class="entry-meta-item posted-on">' . $icon . ' ' . $posted_on . '</span>'; // WPCS: XSS OK.
 
 }
 
@@ -53,7 +57,9 @@ function azeria_post_comments() {
 		return;
 	}
 
-	echo '<span class="entry-meta-item comments"><i class="fa fa-pencil-square-o"></i> ';
+	$icon = azeria_get_social_icon_svg( 'comments' );
+
+	echo '<span class="entry-meta-item comments">' . $icon . ' ';
 	comments_popup_link( esc_html__( 'Leave a comment', 'azeria' ), esc_html__( '1 Comment', 'azeria' ), esc_html__( '% Comments', 'azeria' ) );
 	echo '</span>';
 
@@ -67,8 +73,10 @@ function azeria_post_categories() {
 	}
 
 	$categories_list = get_the_category_list( esc_html__( ', ', 'azeria' ) );
+	$icon = azeria_get_icon_svg( 'categories' );
+
 	if ( $categories_list && azeria_categorized_blog() ) {
-		printf( '<span class="entry-meta-item cat-links"><i class="fa fa-folder-open"></i> ' . esc_html__( 'Posted in %1$s', 'azeria' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+		printf( '<span class="entry-meta-item cat-links">%2$s ' . esc_html__( 'Posted in %1$s', 'azeria' ) . '</span>', $categories_list, $icon ); // WPCS: XSS OK.
 	}
 
 }
@@ -83,8 +91,10 @@ function azeria_post_tags() {
 	}
 
 	$tags_list = get_the_tag_list( '', esc_html__( ', ', 'azeria' ) );
+	$icon = azeria_get_icon_svg( 'tags' );
+
 	if ( $tags_list ) {
-		printf( '<span class="entry-meta-item tags-links"><i class="fa fa-tags"></i> ' . esc_html__( 'Tagged %1$s', 'azeria' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+		printf( '<span class="entry-meta-item tags-links">2$s ' . esc_html__( 'Tagged %1$s', 'azeria' ) . '</span>', $tags_list, $icon ); // WPCS: XSS OK.
 	}
 
 }
@@ -186,18 +196,16 @@ function azeria_blog_content() {
  */
 function azeria_format_icon( $format = 'standard' ) {
 
-	$formats = array(
-		'sticky'   => 'star',
-		'standard' => 'pencil',
-		'aside'    => 'map-marker',
-		'image'    => 'picture-o',
-		'gallery'  => 'picture-o',
-		'video'    => 'video-camera',
-		'quote'    => 'quote-left',
-		'link'     => 'link'
+	$available_formats = array(
+		'sticky',
+		'standard',
+		'image',
+		'gallery',
+		'video',
+		'quote',
 	);
 
-	if ( ! array_key_exists( $format, $formats ) ) {
+	if ( ! in_array( $format, $available_formats ) ) {
 		return '';
 	}
 
@@ -205,7 +213,7 @@ function azeria_format_icon( $format = 'standard' ) {
 		$format = 'sticky';
 	}
 
-	printf( '<div class="entry-icon"><i class="fa fa-%s"></i></div>', $formats[$format] );
+	printf( '<div class="entry-icon">%s</div>', azeria_get_icon_svg( 'post-' . $format ) );
 
 }
 
@@ -352,10 +360,11 @@ function azeria_sidebar_class() {
  * Show 'to top' button HTML markup
  */
 function azeria_to_top() {
+	$icon = azeria_get_icon_svg( 'arrow-up' );
 
 	echo apply_filters(
 		'azeria_to_top_button',
-		'<div id="back-top" class="back-top-btn"><a href="#"><i class="fa fa-angle-up"></i></a></div>'
+		'<div id="back-top" class="back-top-btn"><a href="#">' . $icon . '</a></div>'
 	);
 
 }

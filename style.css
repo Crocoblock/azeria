@@ -1,10 +1,10 @@
 @charset "UTF-8";
 /*
 Theme Name: azeria
-Theme URI: http://www.tefox.net/products/azeria
-Author: teFox
-Author URI: http://www.tefox.net/
-Description: Azeria responsive WordPress theme is here for your reference. Clean minimalistic design is free to change up to your business needs and personal wishes. It could be a pertect starting point for creating your own "home" in the web.
+Theme URI: https://crocoblock.com/
+Author: Crocoblock
+Author URI: https://crocoblock.com/
+Description: Azeria responsive WordPress theme is here for your reference. Clean minimalistic design is free to change up to your business needs and personal wishes. It could be a perfect starting point for creating your own "home" in the web.
 Version: 1.1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -393,6 +393,16 @@ img {
   /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
+
+.svg-icon {
+  display: inline-block;
+  line-height: 1;
+  text-align: center; }
+  .svg-icon svg {
+    display: block;
+    width: 1em;
+    height: 1em;
+    fill: currentColor; }
 
 table {
   margin: 0 0 30px;
@@ -829,21 +839,40 @@ button.menu-toggle {
   width: 50%; }
 
 .navigation.pagination {
-  text-align: center;
   font-size: 0;
-  line-height: 0; }
+  line-height: 0;
+  text-align: center; }
+  .navigation.pagination .nav-links {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .navigation.pagination .page-numbers {
-    display: inline-block;
-    background: #cacaca;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 42px;
     height: 42px;
     line-height: 42px;
-    width: 42px;
+    background: #cacaca;
     color: #fff;
     text-align: center;
     font-size: 20px;
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: bold;
     text-decoration: none;
+    padding: 0 5px;
     margin: 0 5px; }
     .navigation.pagination .page-numbers:hover {
       background: #2b5387; }
@@ -1203,7 +1232,15 @@ button.menu-toggle {
   display: inline-block;
   margin: 0 1px 1px 0; }
   .custom-box-follow-item > a {
-    display: block;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 45px;
     height: 45px;
     line-height: 45px;
@@ -1290,7 +1327,6 @@ button.menu-toggle {
 .slick-slider {
   position: relative;
   display: block;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1304,9 +1340,7 @@ button.menu-toggle {
   .slick-slider .slick-track,
   .slick-slider .slick-list {
     -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
 
 .slick-list {
@@ -1495,7 +1529,9 @@ button.menu-toggle {
     max-width: 660px;
     padding: 25px 30px 30px;
     opacity: 0;
-    transform: translateY(100px); }
+    -webkit-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+            transform: translateY(100px); }
     @media (max-width: 1109px) {
       .slider-banner-content {
         padding: 15px;
@@ -1503,12 +1539,8 @@ button.menu-toggle {
         font-size: 1.1rem; } }
     .slider-item.slick-active .slider-banner-content {
       -webkit-animation: banner 600ms ease 400ms;
-      -moz-animation: banner 600ms ease 400ms;
-      -ms-animation: banner 600ms ease 400ms;
       animation: banner 600ms ease 400ms;
       -webkit-animation-fill-mode: forwards;
-      -moz-animation-fill-mode: forwards;
-      -ms-animation-fill-mode: forwards;
       animation-fill-mode: forwards; }
   .slider-banner-title {
     font-weight: 300;
@@ -1543,15 +1575,13 @@ button.menu-toggle {
     .slider-banner-button-box {
       float: right;
       opacity: 0;
-      transform: translateY(100px); }
+      -webkit-transform: translateY(100px);
+          -ms-transform: translateY(100px);
+              transform: translateY(100px); }
       .slider-item.slick-active .slider-banner-button-box {
         -webkit-animation: banner 500ms ease 800ms;
-        -moz-animation: banner 500ms ease 800ms;
-        -ms-animation: banner 500ms ease 800ms;
         animation: banner 500ms ease 800ms;
         -webkit-animation-fill-mode: forwards;
-        -moz-animation-fill-mode: forwards;
-        -ms-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
     .slider-banner-button:after {
       content: "\f105";
@@ -1567,31 +1597,21 @@ button.menu-toggle {
 
 @-webkit-keyframes banner {
   0% {
-    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     opacity: 0; }
   100% {
-    transform: translateY(0);
-    opacity: 1; } }
-@-moz-keyframes banner {
-  0% {
-    transform: translateY(100px);
-    opacity: 0; }
-  100% {
-    transform: translateY(0);
-    opacity: 1; } }
-@-ms-keyframes banner {
-  0% {
-    transform: translateY(100px);
-    opacity: 0; }
-  100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1; } }
 @keyframes banner {
   0% {
-    transform: translateY(100px);
+    -webkit-transform: translateY(100px);
+            transform: translateY(100px);
     opacity: 0; }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1; } }
 /*--------------------------------------------------------------
 ## Posts and pages
@@ -1675,6 +1695,15 @@ button.menu-toggle {
       color: #ff5400; }
 
 .entry-icon {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 65px;
   height: 65px;
   line-height: 65px;
@@ -1748,8 +1777,9 @@ button.menu-toggle {
     left: 30px;
     content: '';
     opacity: 0;
-    -webkit-transition: opacity 350ms, -webkit-transform 350ms;
-    transition: opacity 350ms, transform 350ms; }
+    transition: opacity 350ms, -webkit-transform 350ms;
+    transition: opacity 350ms, transform 350ms;
+    transition: opacity 350ms, transform 350ms, -webkit-transform 350ms; }
     @media (max-width: 767px) {
       .entry-thumbnail a:before, .entry-thumbnail a:after,
       .popup-gallery-item:before,
@@ -1766,14 +1796,16 @@ button.menu-toggle {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: scale(0, 1);
-    transform: scale(0, 1); }
+    -ms-transform: scale(0, 1);
+        transform: scale(0, 1); }
   .entry-thumbnail a:after,
   .popup-gallery-item:after,
   .image-popup:after {
     border-right: 1px solid #fff;
     border-left: 1px solid #fff;
     -webkit-transform: scale(1, 0);
-    transform: scale(1, 0); }
+    -ms-transform: scale(1, 0);
+        transform: scale(1, 0); }
   .entry-thumbnail a .link-marker,
   .popup-gallery-item .link-marker,
   .image-popup .link-marker {
@@ -1791,13 +1823,8 @@ button.menu-toggle {
     font-size: 50px;
     color: #fff;
     opacity: 0;
-    -webkit-box-sizing: content-box;
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
-    -webkit-background-clip: content-box;
-    -moz-background-clip: content-box;
     background-clip: content-box;
-    -webkit-transition: all 350ms;
     transition: all 350ms; }
     @media (max-width: 767px) {
       .entry-thumbnail a .link-marker,
@@ -1826,7 +1853,8 @@ button.menu-toggle {
   .image-popup:hover:after {
     opacity: .8;
     -webkit-transform: scale(1);
-    transform: scale(1); }
+    -ms-transform: scale(1);
+        transform: scale(1); }
   .entry-thumbnail a:hover .link-marker,
   .popup-gallery-item:hover .link-marker,
   .image-popup:hover .link-marker {
@@ -2263,8 +2291,6 @@ object {
   left: 0;
   top: 0;
   padding: 0 8px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .mfp-container:before {
@@ -2292,14 +2318,12 @@ object {
   cursor: progress; }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out; }
 
 .mfp-zoom {
   cursor: pointer;
   cursor: -webkit-zoom-in;
-  cursor: -moz-zoom-in;
   cursor: zoom-in; }
 
 .mfp-auto-cursor .mfp-content {
@@ -2308,7 +2332,8 @@ object {
 .mfp-close, .mfp-arrow, .mfp-preloader, .mfp-counter {
   -webkit-user-select: none;
   -moz-user-select: none;
-  user-select: none; }
+  -ms-user-select: none;
+      user-select: none; }
 
 .mfp-loading.mfp-figure {
   display: none; }
@@ -2349,7 +2374,6 @@ button.mfp-close, button.mfp-arrow {
   outline: none;
   padding: 0;
   z-index: 1046;
-  -webkit-box-shadow: none;
   box-shadow: none; }
 
 button::-moz-focus-inner {
@@ -2496,8 +2520,6 @@ img.mfp-img {
   height: auto;
   display: block;
   line-height: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 0 40px;
   margin: 0 auto; }
@@ -2576,8 +2598,6 @@ img.mfp-img {
     top: auto;
     padding: 3px 5px;
     position: fixed;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box; }
 
   .mfp-img-mobile .mfp-bottom-bar:empty {
@@ -2600,15 +2620,18 @@ img.mfp-img {
 @media all and (max-width: 900px) {
   .mfp-arrow {
     -webkit-transform: scale(0.75);
-    transform: scale(0.75); }
+    -ms-transform: scale(0.75);
+        transform: scale(0.75); }
 
   .mfp-arrow-left {
     -webkit-transform-origin: 0;
-    transform-origin: 0; }
+    -ms-transform-origin: 0;
+        transform-origin: 0; }
 
   .mfp-arrow-right {
     -webkit-transform-origin: 100%;
-    transform-origin: 100%; }
+    -ms-transform-origin: 100%;
+        transform-origin: 100%; }
 
   .mfp-container {
     padding-left: 6px;
