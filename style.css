@@ -1729,7 +1729,7 @@ button.menu-toggle {
     text-decoration: none; }
     .entry-meta-item a:hover {
       color: #ff5400; }
-  .entry-meta-item i.fa {
+  .entry-meta-item i {
     display: inline-block;
     color: #000000;
     opacity: .4;
@@ -1738,7 +1738,7 @@ button.menu-toggle {
     vertical-align: middle;
     font-size: 14.3px;
     font-size: 1.1rem;
-    line-height: .9;
+    line-height: 1;
     text-indent: 1px; }
 
 .entry-thumbnail {

@@ -57,7 +57,7 @@ function azeria_post_comments() {
 		return;
 	}
 
-	$icon = azeria_get_social_icon_svg( 'comments' );
+	$icon = azeria_get_icon_svg( 'comments' );
 
 	echo '<span class="entry-meta-item comments">' . $icon . ' ';
 	comments_popup_link( esc_html__( 'Leave a comment', 'azeria' ), esc_html__( '1 Comment', 'azeria' ), esc_html__( '% Comments', 'azeria' ) );
@@ -94,7 +94,7 @@ function azeria_post_tags() {
 	$icon = azeria_get_icon_svg( 'tags' );
 
 	if ( $tags_list ) {
-		printf( '<span class="entry-meta-item tags-links">2$s ' . esc_html__( 'Tagged %1$s', 'azeria' ) . '</span>', $tags_list, $icon ); // WPCS: XSS OK.
+		printf( '<span class="entry-meta-item tags-links">%2$s ' . esc_html__( 'Tagged %1$s', 'azeria' ) . '</span>', $tags_list, $icon ); // WPCS: XSS OK.
 	}
 
 }
