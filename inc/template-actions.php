@@ -93,13 +93,19 @@ function azeria_slider() {
 		$result .= '<div class="slider-item">' . $image . $banner . '</div>';
 	}
 
+	wp_reset_postdata();
+	wp_reset_query();
+
 	$slider_defaults = apply_filters(
 		'azeria_slider_default_args',
 		array(
-			'fade'   => false,
-			'arrows' => true,
-			'dots'   => true,
-			'speed'  => 400
+			'fade'           => false,
+			'arrows'         => true,
+			'dots'           => true,
+			'speed'          => 400,
+			'adaptiveHeight' => true,
+			'prevArrow'      => '.slick-prev',
+			'nextArrow'      => '.slick-next',
 		) 
 	);
 
@@ -116,17 +122,19 @@ function azeria_slider() {
 		$slider_defaults
 	);
 
-	$slider_args = json_encode( $slider_args );
+	$prev_arrow = $slider_args['arrows'] ? sprintf( '<button class="slick-prev">%s</button>', azeria_get_icon_svg( 'arrow-left' ) ) : '';
+	$next_arrow = $slider_args['arrows'] ? sprintf( '<button class="slick-next">%s</button>', azeria_get_icon_svg( 'arrow-right' ) ) : '';
 
-	wp_reset_postdata();
-	wp_reset_query();
+	$slider_args = json_encode( $slider_args );
 
 	/**
 	 * Filter slider output before printing
 	 */
 	$result = apply_filters( 
 		'azeria_slider_output',
-		sprintf( '<div class="slider-box" data-args=\'%2$s\'>%1$s</div>', $result, $slider_args )
+		sprintf( '<div class="slider-box" data-args=\'%2$s\'><div class="slider-items">%1$s</div>%3$s%4$s</div>',
+			$result, $slider_args, $prev_arrow, $next_arrow
+		)
 	);
 
 	echo $result;
@@ -138,6 +146,7 @@ function azeria_slider() {
  * 
  * @param  int    $post_id  post ID to get banner for
  * @param  string $btn_text banner button text
+ * @return string
  */
 function azeria_get_slider_banner( $post_id, $btn_text ) {
 
@@ -153,9 +162,10 @@ function azeria_get_slider_banner( $post_id, $btn_text ) {
 		$excerpt = str_replace( ']]>', ']]&gt;', $excerpt );
 		$excerpt = wp_trim_words( $excerpt, 20, '' );
 	}
-	$excerpt = '<div class="slider-banner-excerpt">' . $excerpt . '</div>';
+	$excerpt     = '<div class="slider-banner-excerpt">' . $excerpt . '</div>';
+	$button_icon = azeria_get_icon_svg( 'arrow-right' );
 
-	$button = '<div class="slider-banner-button-box"><a href="' . get_permalink( $post_id ) . '" class="slider-banner-button">' . $btn_text . '</a></div>';
+	$button = '<div class="slider-banner-button-box"><a href="' . get_permalink( $post_id ) . '" class="slider-banner-button button">' . $btn_text . $button_icon . '</a></div>';
 
 	return sprintf( $format, $title, $excerpt, $button );
 }

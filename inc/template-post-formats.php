@@ -108,7 +108,7 @@ function azeria_post_gallery() {
 		return false;
 	}
 
-	$output = azeria_get_gallery_html( $post_gallery );
+	$output = azeria_get_gallery_html( $post_gallery, array( 'id' => $post_id ) );
 
 	echo $output;
 }
@@ -122,6 +122,8 @@ function azeria_get_gallery_html( $images, $atts = array() ) {
 		'link' => ''
 	) );
 
+	$id = isset( $atts['id'] ) ? $atts['id'] : rand( 0, 999 );
+
 	$default_slider_init = array(
 		'infinite'       => true,
 		'speed'          => 400,
@@ -129,8 +131,8 @@ function azeria_get_gallery_html( $images, $atts = array() ) {
 		'cssEase'        => 'linear',
 		'adaptiveHeight' => true,
 		'dots'           => false,
-		'prevArrow'      => '<span class="entry-gallery-prev"></span>',
-		'nextArrow'      => '<span class="entry-gallery-next"></span>'
+		'prevArrow'      => '.entry-gallery-prev-' . $id,
+		'nextArrow'      => '.entry-gallery-next-' . $id,
 	);
 
 	/**
@@ -209,9 +211,12 @@ function azeria_get_gallery_html( $images, $atts = array() ) {
 
 	$items = implode( "\r\n", $items );
 
+	$prev_arrow = sprintf( '<span class="entry-gallery-prev entry-gallery-prev-%2$s" role="button">%1$s</span>', azeria_get_icon_svg( 'arrow-left' ), $id );
+	$next_arrow = sprintf( '<span class="entry-gallery-next entry-gallery-next-%2$s" role="button">%1$s</span>', azeria_get_icon_svg( 'arrow-right' ), $id );
+
 	$result = sprintf(
-		'<div class="%2$s popup-gallery" data-init=\'%3$s\' data-popup-init=\'%4$s\'>%1$s</div>',
-		$items, 'entry-gallery', $init, $gall_init
+		'<div class="%2$s popup-gallery" data-init=\'%3$s\' data-popup-init=\'%4$s\'><div class="%2$s-items">%1$s</div>%5$s%6$s</div>',
+		$items, 'entry-gallery', $init, $gall_init, $prev_arrow, $next_arrow
 	);
 
 	return $result;

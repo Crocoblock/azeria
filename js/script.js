@@ -8,23 +8,29 @@
 
 		// Try to init main slider
 		var $slider = $('.slider-box'),
+			$sliderItems,
 			_args;
 
 		if ( $slider.length ) {
-
+			$sliderItems = $( '.slider-items', $slider );
 			_args = $slider.data( 'args' );
-			$slider.slick( _args );
+
+			$sliderItems.slick( _args );
 
 		}
 
 		// Try to init post format gallery slider
-		var $gallery = $('.entry-gallery'),
-			_gall_args;
+		var $gallery = $('.entry-gallery');
 
 		if ( $gallery.length ) {
 
-			_gall_args = $gallery.data( 'init' );
-			$gallery.slick( _gall_args );
+			$gallery.each(function(){
+				var _this = $( this ),
+					_gall_items = $('.entry-gallery-items', _this),
+					_gall_args = _this.data( 'init' );
+
+				_gall_items.slick( _gall_args );
+			});
 
 		}
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*
 Theme Name: azeria
 Theme URI: https://crocoblock.com/
@@ -480,8 +479,8 @@ input[type="submit"] {
       -ms-flex-align: center;
           align-items: center; }
   .button i {
-    padding: 0 0 0 7px;
-    margin: 0 -7px 0 0; }
+    padding: 0 0 0 1px;
+    margin: 0 -0.3em 0 0; }
 
 input.search-submit {
   vertical-align: top; }
@@ -1413,6 +1412,15 @@ button.menu-toggle {
   .slider-box .slick-prev:focus,
   .slider-box .slick-next:active,
   .slider-box .slick-next:focus {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     top: 50%;
     width: 40px;
@@ -1440,14 +1448,6 @@ button.menu-toggle {
       .slider-box .slick-next:active,
       .slider-box .slick-next:focus {
         display: none !important; } }
-    .slider-box .slick-prev:before,
-    .slider-box .slick-next:before,
-    .slider-box .slick-prev:active:before,
-    .slider-box .slick-prev:focus:before,
-    .slider-box .slick-next:active:before,
-    .slider-box .slick-next:focus:before {
-      display: block;
-      font-family: FontAwesome; }
     .slider-box .slick-prev:hover,
     .slider-box .slick-next:hover,
     .slider-box .slick-prev:active:hover,
@@ -1459,12 +1459,8 @@ button.menu-toggle {
       box-shadow: none; }
   .slider-box .slick-prev {
     left: 0; }
-    .slider-box .slick-prev:before {
-      content: "\f104"; }
   .slider-box .slick-next {
     right: 0; }
-    .slider-box .slick-next:before {
-      content: ""; }
   .slider-box .slick-dots {
     position: absolute;
     bottom: 12px;
@@ -1569,7 +1565,9 @@ button.menu-toggle {
         font-size: 20.8px;
         font-size: 1.6rem; } }
   .slider-banner-button {
-    display: inline-block;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     padding: 10px 20px;
     background: #ff5400;
     color: #fff;
@@ -1595,12 +1593,6 @@ button.menu-toggle {
         animation: banner 500ms ease 800ms;
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards; }
-    .slider-banner-button:after {
-      content: "\f105";
-      font-family: FontAwesome;
-      display: inline-block;
-      padding: 0 0 0 7px;
-      margin: 0 -7px 0 0; }
     .slider-banner-button:hover, .slider-banner-button:focus, .slider-banner-button:active {
       color: #fff;
       background: #2b5387; }
@@ -1672,9 +1664,7 @@ button.menu-toggle {
 .is-loop.format-quote .entry-content {
   padding-left: 60px;
   position: relative; }
-  .is-loop.format-quote .entry-content:before {
-    content: "\f10d";
-    font-family: FontAwesome;
+  .is-loop.format-quote .entry-content .quote-icon {
     font-size: 50px;
     line-height: 50px;
     position: absolute;
@@ -1821,6 +1811,15 @@ button.menu-toggle {
   .entry-thumbnail a .link-marker,
   .popup-gallery-item .link-marker,
   .image-popup .link-marker {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     background: #ff5400;
     width: 88px;
     height: 88px;
@@ -1852,12 +1851,18 @@ button.menu-toggle {
     .entry-thumbnail a .link-marker:before,
     .popup-gallery-item .link-marker:before,
     .image-popup .link-marker:before {
-      content: "\f0c1";
-      font-family: FontAwesome; }
+      content: '';
+      display: block;
+      width: 1em;
+      height: 1em;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' fill='%23fff'%3E%3Cpath d='M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z'/%3E%3C/svg%3E"); }
     .entry-thumbnail a .link-marker.popup:before,
     .popup-gallery-item .link-marker.popup:before,
     .image-popup .link-marker.popup:before {
-      content: "\f067"; }
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512' fill='%23fff'%3E%3Cpath d='M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z'/%3E%3C/svg%3E"); }
   .entry-thumbnail a:hover:before, .entry-thumbnail a:hover:after,
   .popup-gallery-item:hover:before,
   .popup-gallery-item:hover:after,
@@ -1931,6 +1936,15 @@ button.menu-toggle {
         display: block; }
   .entry-gallery-prev, .entry-gallery-next {
     position: absolute;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 48px;
     height: 48px;
     line-height: 48px;
@@ -1942,18 +1956,12 @@ button.menu-toggle {
     cursor: pointer;
     text-align: center;
     transition: all 200ms ease-in; }
-    .entry-gallery-prev:before, .entry-gallery-next:before {
-      font-family: FontAwesome; }
     .entry-gallery-prev:hover, .entry-gallery-next:hover {
       background: #ff5400; }
   .entry-gallery-prev {
     left: 30px; }
-    .entry-gallery-prev:before {
-      content: "\f104"; }
   .entry-gallery-next {
     right: 30px; }
-    .entry-gallery-next:before {
-      content: "\f105"; }
   .entry-gallery-caption {
     color: #fff;
     position: absolute;

@@ -99,6 +99,9 @@
 	.slick-prev:focus,
 	.slick-next:active,
 	.slick-next:focus {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: absolute;
 		top: 50%;
 		width: 40px;
@@ -120,10 +123,6 @@
 		@media (max-width: 480px) {
 			display: none !important;
 		}
-		&:before {
-			display: block;
-			font-family: FontAwesome;
-		}
 		&:hover {
 			background: $color__link;
 			color: #fff;
@@ -132,15 +131,9 @@
 	}
 	.slick-prev {
 		left: 0;
-		&:before {
-			content: "\f104";
-		}
 	}
 	.slick-next {
 		right: 0;
-		&:before {
-			content: "\f105"
-		}
 	}
 	.slick-dots {
 		position: absolute;
@@ -257,7 +250,7 @@
 		}
 	}
 	&-button {
-		display: inline-block;
+		display: inline-flex;
 		padding: 10px 20px;
 		background: $color__link;
 		color: #fff;
@@ -284,13 +277,6 @@
 				-ms-animation-fill-mode: forwards;
 				animation-fill-mode: forwards;
 			}
-		}
-		&:after {
-			content: "\f105";
-			font-family: FontAwesome;
-			display: inline-block;
-			padding: 0 0 0 7px;
-			margin: 0 -7px 0 0;
 		}
 		&:hover,
 		&:focus,
