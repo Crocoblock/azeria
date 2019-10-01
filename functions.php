@@ -185,7 +185,6 @@ function azeria_assets() {
 
 	// Styles
 	wp_enqueue_style( 'azeria-fonts', azeria_fonts_url() );
-	wp_enqueue_style( 'azeria-font-awesome', $base_url . '/css/font-awesome.min.css', false, '4.5.0' );
 	wp_enqueue_style( 'azeria-style', get_stylesheet_uri(), false, '1.1.0' );
 
 	// Scripts

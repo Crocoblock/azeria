@@ -567,7 +567,7 @@ function azeria_sanitize_select( $input, $setting ) {
  *
  * @copyright Copyright (c) 2015, WordPress Theme Review Team
  */
-function azeria_sanitize_num( $number ) {
+function azeria_sanitize_num( $number, $setting ) {
 	// Ensure $number is an absolute integer (whole number, zero or greater).
 	$number = absint( $number );
 
