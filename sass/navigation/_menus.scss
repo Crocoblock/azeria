@@ -115,14 +115,10 @@
 			.menu-item-has-children {
 				> a {
 					&:after {
-						content: "\f105";
-						font-family: FontAwesome;
+						content: "+";
 						position: absolute;
-						right: 8px;
-						@include font-size(1.2);
-						line-height: 1;
+						right: 10px;
 						@media (max-width: 600px) {
-							content: "\f107";
 							position: static;
 							display: inline-block;
 							margin: 0 0 0 5px;
@@ -273,6 +269,8 @@
 
 button.menu-toggle {
 	display: none;
+	justify-content: center;
+	align-items: center;
 	background: none;
 	border: none;
 	box-shadow: none;
@@ -283,12 +281,17 @@ button.menu-toggle {
 	color: $color__text-main;
 	text-align: center;
 	width: 100%;
-	&:before {
-		content: "\f0c9";
-		font-family: FontAwesome;
-		display: inline-block;
+
+	.toggle-icon-normal,
+	.toggle-icon-active {
+		display: block;
 		padding: 0 10px 0 0;
 	}
+
+	.toggle-icon-active {
+		display: none;
+	}
+
 	&:hover,
 	&:active,
 	&:focus {
@@ -298,15 +301,18 @@ button.menu-toggle {
 		outline: none;
 	}
 	&[aria-expanded="true"] {
-		&:before {
-			content: "\f00d";
+		.toggle-icon-normal {
+			display: none;
+		}
+		.toggle-icon-active {
+			display: block;
 		}
 	}
 }
 
 @media (max-width: 600px) {
 	button.menu-toggle {
-		display: block;
+		display: flex;
 	}
 	.main-navigation ul {
 		display: none;
@@ -388,6 +394,7 @@ button.menu-toggle {
 		a {
 			display: inline-block;
 			position: relative;
+			text-decoration: none;
 		}
 
 		.post-nav-label {
@@ -397,11 +404,10 @@ button.menu-toggle {
 		.nav-previous {
 			.post-nav-label {
 				overflow: hidden;
-				&:after {
-					float: left;
+
+				i {
 					margin: 0 0 0 -7px;
 					padding: 0 7px 0 0;
-					content: "\f104";
 				}
 			}
 		}

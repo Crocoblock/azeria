@@ -99,13 +99,14 @@ function azeria_comment( $comment, $args, $depth ) {
 						<?php echo human_time_diff( get_comment_time('U'), current_time('timestamp') ) . ' ' . __( 'ago', 'azeria' ); ?>
 					</time>
 					<?php
-						comment_reply_link( 
+						comment_reply_link(
 							array_merge( $args, array(
-								'add_below' => 'div-comment',
-								'depth'     => $depth,
-								'max_depth' => $args['max_depth'],
-								'before'    => '<div class="reply">',
-								'after'     => '</div>',
+								'add_below'  => 'div-comment',
+								'depth'      => $depth,
+								'max_depth'  => $args['max_depth'],
+								'before'     => '<div class="reply">',
+								'after'      => '</div>',
+								'reply_text' => azeria_get_icon_svg( 'reply' ) . __( 'Reply', 'azeria' ),
 							) ),
 							$comment
 						);

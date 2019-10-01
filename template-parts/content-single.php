@@ -41,10 +41,13 @@
 	<footer class="entry-footer">
 		<?php azeria_post_meta( 'single', 'footer' ); ?>
 		<?php
+			$prev_icon = azeria_get_icon_svg( 'arrow-left' );
+			$next_icon = azeria_get_icon_svg( 'arrow-right' );
+
 			the_post_navigation(
 				array(
-					'prev_text' => '<span class="post-nav-label button">' . __( 'Prev', 'azeria' ) . '</span><span class="post-nav-title">%title</span>',
-					'next_text' => '<span class="post-nav-label button">' . __( 'Next', 'azeria' ) . '</span><span class="post-nav-title">%title</span>'
+					'prev_text' => '<span class="post-nav-label button">' . $prev_icon . __( 'Prev', 'azeria' ) . '</span><span class="post-nav-title">%title</span>',
+					'next_text' => '<span class="post-nav-label button">' . __( 'Next', 'azeria' ) . $next_icon . '</span><span class="post-nav-title">%title</span>'
 				)
 			);
 		?>

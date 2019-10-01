@@ -44,15 +44,14 @@
 		margin: 0 0 0 20px;
 	}
 	.comment-reply-link {
+		display: flex;
+		align-items: center;
 		color: #999;
 		text-decoration: none;
 		&:hover {
 			color: $color__link-hover;
 		}
-		&:before {
-			content: "\f112";
-			font-family: FontAwesome;
-			display: inline-block;
+		i {
 			padding: 0 5px 0 0;
 		}
 	}

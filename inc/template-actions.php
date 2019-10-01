@@ -150,7 +150,7 @@ function azeria_get_slider_banner( $post_id, $btn_text ) {
 	} else {
 		$content = get_the_content();
 		$excerpt = strip_shortcodes( $content );
-		$excerpt = str_replace( ']]>', ']]&gt;', $content );
+		$excerpt = str_replace( ']]>', ']]&gt;', $excerpt );
 		$excerpt = wp_trim_words( $excerpt, 20, '' );
 	}
 	$excerpt = '<div class="slider-banner-excerpt">' . $excerpt . '</div>';

@@ -469,12 +469,19 @@ input[type="submit"] {
   input[type="submit"] {
     min-width: 130px; }
 
-.button:after {
-  content: "\f105";
-  font-family: FontAwesome;
-  display: inline-block;
-  padding: 0 0 0 7px;
-  margin: 0 -7px 0 0; }
+.button {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .button i {
+    padding: 0 0 0 7px;
+    margin: 0 -7px 0 0; }
 
 input.search-submit {
   vertical-align: top; }
@@ -641,17 +648,12 @@ a {
           opacity: 1; }
       .main-navigation ul ul .page_item_has_children > a:after,
       .main-navigation ul ul .menu-item-has-children > a:after {
-        content: "\f105";
-        font-family: FontAwesome;
+        content: "+";
         position: absolute;
-        right: 8px;
-        font-size: 15.6px;
-        font-size: 1.2rem;
-        line-height: 1; }
+        right: 10px; }
         @media (max-width: 600px) {
           .main-navigation ul ul .page_item_has_children > a:after,
           .main-navigation ul ul .menu-item-has-children > a:after {
-            content: "\f107";
             position: static;
             display: inline-block;
             margin: 0 0 0 5px;
@@ -791,6 +793,12 @@ a {
 
 button.menu-toggle {
   display: none;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: none;
   border: none;
   box-shadow: none;
@@ -802,22 +810,27 @@ button.menu-toggle {
   color: #474747;
   text-align: center;
   width: 100%; }
-  button.menu-toggle:before {
-    content: "\f0c9";
-    font-family: FontAwesome;
-    display: inline-block;
+  button.menu-toggle .toggle-icon-normal,
+  button.menu-toggle .toggle-icon-active {
+    display: block;
     padding: 0 10px 0 0; }
+  button.menu-toggle .toggle-icon-active {
+    display: none; }
   button.menu-toggle:hover, button.menu-toggle:active, button.menu-toggle:focus {
     box-shadow: none;
     background: none;
     color: #ff5400;
     outline: none; }
-  button.menu-toggle[aria-expanded="true"]:before {
-    content: "\f00d"; }
+  button.menu-toggle[aria-expanded="true"] .toggle-icon-normal {
+    display: none; }
+  button.menu-toggle[aria-expanded="true"] .toggle-icon-active {
+    display: block; }
 
 @media (max-width: 600px) {
   button.menu-toggle {
-    display: block; }
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
 
   .main-navigation ul {
     display: none; } }
@@ -893,17 +906,16 @@ button.menu-toggle {
     content: ""; }
   .navigation.post-navigation a {
     display: inline-block;
-    position: relative; }
+    position: relative;
+    text-decoration: none; }
   .navigation.post-navigation .post-nav-label {
     position: relative;
     z-index: 2; }
   .navigation.post-navigation .nav-previous .post-nav-label {
     overflow: hidden; }
-    .navigation.post-navigation .nav-previous .post-nav-label:after {
-      float: left;
+    .navigation.post-navigation .nav-previous .post-nav-label i {
       margin: 0 0 0 -7px;
-      padding: 0 7px 0 0;
-      content: "\f104"; }
+      padding: 0 7px 0 0; }
   .navigation.post-navigation .post-nav-title {
     pointer-events: none;
     position: absolute;
@@ -2061,14 +2073,17 @@ button.menu-toggle {
     display: inline-block;
     margin: 0 0 0 20px; }
   .comment-body .comment-reply-link {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: #999;
     text-decoration: none; }
     .comment-body .comment-reply-link:hover {
       color: #2b5387; }
-    .comment-body .comment-reply-link:before {
-      content: "\f112";
-      font-family: FontAwesome;
-      display: inline-block;
+    .comment-body .comment-reply-link i {
       padding: 0 5px 0 0; }
 
 .comment-content a {

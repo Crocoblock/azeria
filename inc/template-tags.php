@@ -343,8 +343,9 @@ function azeria_read_more() {
 	}
 
 	$text = azeria_get_option( 'blog_more_text', __( 'Read', 'azeria' ) );
+	$icon = azeria_get_icon_svg( 'arrow-right' );
 
-	printf( '<div class="etry-more-btn"><a href="%1$s" class="button">%2$s</a></div>', get_permalink(), esc_textarea( $text ) );
+	printf( '<div class="etry-more-btn"><a href="%1$s" class="button">%2$s%3$s</a></div>', get_permalink(), esc_textarea( $text ), $icon );
 
 }
 

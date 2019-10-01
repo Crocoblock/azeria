@@ -32,7 +32,11 @@
 
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<div class="container">
-				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'azeria' ); ?></button>
+				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<?php echo azeria_get_icon_svg( 'bars', array( 'toggle-icon-normal' ) ); ?>
+					<?php echo azeria_get_icon_svg( 'close', array( 'toggle-icon-active' ) ); ?>
+					<?php esc_html_e( 'Menu', 'azeria' ); ?>
+				</button>
 				<?php 
 					wp_nav_menu( 
 						array( 
