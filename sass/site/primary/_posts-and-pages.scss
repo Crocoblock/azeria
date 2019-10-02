@@ -1,12 +1,15 @@
 .site-content {
-	padding: 30px 0;
+	> .container {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
 }
 
 .sticky {
 	display: block;
 }
 
-.hentry {
+.hentry:not(.elementor) {
 	padding: 30px;
 	background: #fff;
 	margin: 0 0 30px;

@@ -286,6 +286,67 @@ function azeria_get_option( $name, $default = false ) {
 }
 
 /**
+ * Do Elementor or Jet Theme Core location
+ *
+ * @since  1.2.0
+ * @param  string $location
+ * @param  string $fallback
+ * @return bool
+ */
+function azeria_do_location( $location = null, $fallback = null ) {
+
+	$handler = false;
+	$done    = false;
+
+	// Choose handler
+	if ( function_exists( 'jet_theme_core' ) ) {
+		$handler = array( jet_theme_core()->locations, 'do_location' );
+	} elseif ( function_exists( 'elementor_theme_do_location' ) ) {
+		$handler = 'elementor_theme_do_location';
+	}
+
+	// If handler is found - try to do passed location
+	if ( false !== $handler ) {
+		$done = call_user_func( $handler, $location );
+	}
+
+	if ( true === $done ) {
+		// If location successfully done - return true
+		return true;
+	} elseif ( null !== $fallback ) {
+		// If for some reasons location couldn't be done and passed fallback template name - include this template and return
+		if ( is_array( $fallback ) ) {
+			// fallback in name slug format
+			get_template_part( $fallback[0], $fallback[1] );
+		} else {
+			// fallback with just a name
+			get_template_part( $fallback );
+		}
+		return true;
+	}
+
+	// In other cases - return false
+	return false;
+}
+
+/**
+ * Register Elementor Pro locations
+ *
+ * @param object $elementor_theme_manager
+ */
+function azeria_elementor_locations( $elementor_theme_manager ) {
+
+	// Do nothing if Jet Theme Core is active.
+	if ( function_exists( 'jet_theme_core' ) ) {
+		return;
+	}
+
+	$elementor_theme_manager->register_all_core_location();
+}
+
+add_action( 'elementor/theme/register_locations', 'azeria_elementor_locations' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

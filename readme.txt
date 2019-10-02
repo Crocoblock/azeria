@@ -1,6 +1,6 @@
 === Azeria ===
 
-Contributors: teFox
+Contributors: Crocoblock
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
 Requires at least: 4.3
