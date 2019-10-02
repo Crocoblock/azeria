@@ -3,9 +3,9 @@
 Contributors: Crocoblock
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
-Requires at least: 4.3
-Tested up to: 4.3
-Stable tag: 1.0.2
+Requires at least: 5.2
+Tested up to: 5.2
+Stable tag: 1.2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -57,12 +57,17 @@ Azeria responsive WordPress theme is here for your reference. Clean minimalistic
 * FIX: max width for logo container
 * FIX: move header bg image to '.site-branding' block for better responsive behavior
 
+= 1.2.0 =
+* ADD: compatibility with Elementor and JetTheme Core plugins
+* UPD: minimized vendor js scripts
+* UPD: replacing font icons with SVG icons
+
 == Credits ==
 
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css - http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
 * Azeria WordPress Theme incorporates code from Photolab WordPress Theme, Photolab WordPress Theme is distributed under the terms of the GNU GPL
-* Font Awesome 4.5.0 by @davegandy - http://fontawesome.io - @fontawesome. License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+* Font Awesome SVG icons by @davegandy - https://fontawesome.com - @fontawesome. License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
 * Magnific Popup - http://dimsemenov.com/plugins/magnific-popup/ licensed under MIT License (MIT) Copyright (c) 2015 Dmitry Semenov
 * slick.js - Ken Wheeler, http://kenwheeler.github.io, licensed under MIT License (MIT)
 * other CSS and JS files licensed under GPLv2+
