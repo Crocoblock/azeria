@@ -37,7 +37,7 @@
 				?>
 				<a rel="nofollow" href="<?php echo esc_url( __( 'http://wordpress.org/', 'azeria' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'azeria' ), 'WordPress' ); ?></a>
 				<span class="sep"> | </span>
-				<?php printf( __( 'Theme: %1$s by <a href="%2$s" rel="nofollow">Tefox</a>.', 'azeria' ), 'Azeria', esc_url( 'http://www.tefox.net/' ) ); ?>
+				<?php printf( __( 'Theme: %1$s by <a href="%2$s" rel="nofollow">Crocoblock</a>.', 'azeria' ), 'Azeria', esc_url( 'https://crocoblock.com/' ) ); ?>
 			<?php } ?>
 		</div>
 	</div><!-- .site-info -->

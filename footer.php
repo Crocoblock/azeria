@@ -10,7 +10,6 @@
 ?>
 	</div><!-- #content -->
 
-
 	<?php azeria_do_location( 'footer', 'template-parts/footer' ); ?>
 
 </div><!-- #page -->

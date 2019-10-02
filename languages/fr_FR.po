@@ -1,29 +1,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: azeria 1.0.2\n"
-"POT-Creation-Date: 2015-10-19 19:17+0200\n"
-"PO-Revision-Date: 2015-10-21 20:02+0200\n"
+"POT-Creation-Date: 2019-10-02 17:39+0300\n"
+"PO-Revision-Date: 2019-10-02 17:39+0300\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 2.1.1\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Poedit-KeywordsList: __;_e;_x;esc_attr_e;_n;esc_html_e;esc_html__;"
 "esc_attr__\n"
-"Last-Translator: \n"
-"Language: fr\n"
 "X-Poedit-SearchPath-0: .\n"
-
-#: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oups&nbsp;! Cette page est introuvable."
-
-#: 404.php:19
-msgid ""
-"It looks like nothing was found at this location. Maybe try to use a search?"
-msgstr "Essayez d’utiliser la recherche."
 
 #: comments.php:38 comments.php:60
 msgid "Comment navigation"
@@ -54,20 +45,6 @@ msgstr "Laisser une réponse"
 msgid "Leave a Reply to %s"
 msgstr "Laisser un commentaire à %s"
 
-#: footer.php:43
-msgid "http://wordpress.org/"
-msgstr "http://wordpress.org/"
-
-#: footer.php:43
-#, php-format
-msgid "Proudly powered by %s"
-msgstr "Propulsé par %s"
-
-#: footer.php:45
-#, php-format
-msgid "Theme: %1$s by <a href=\"%2$s\" rel=\"nofollow\">Tefox</a>."
-msgstr "Thème : %1$s par <a href=\"%2$s\" rel=\"nofollow\">Tefox</a>."
-
 #: functions.php:98
 msgid "Primary Menu"
 msgstr "Menu principal"
@@ -88,296 +65,320 @@ msgstr "Pied de page Sidebar Midlle"
 msgid "Footer Sidebar Right"
 msgstr "Footer Right sidebar"
 
-#: functions.php:215 functions.php:221 functions.php:227
+#: functions.php:224 functions.php:230 functions.php:236
 msgid "on"
 msgstr "dans"
 
-#: header.php:24
+#: header.php:25
 msgid "Skip to content"
 msgstr "Aller au contenu principal"
 
-#: header.php:35
-msgid "Menu"
-msgstr "Menu"
-
 #: inc/customizer.php:42
+msgid "General"
+msgstr ""
+
+#: inc/customizer.php:53
+msgid "Menu type"
+msgstr ""
+
+#: inc/customizer.php:59
+msgid "Static menu"
+msgstr ""
+
+#: inc/customizer.php:60
+msgid "Sticky menu"
+msgstr ""
+
+#: inc/customizer.php:67
 msgid "Header Logo"
 msgstr "Logo de l’en-tête"
 
-#: inc/customizer.php:54
+#: inc/customizer.php:79
 msgid "Logo Image"
 msgstr "Image du logo"
 
-#: inc/customizer.php:65
+#: inc/customizer.php:90
 msgid "Slider"
 msgstr "Slider"
 
-#: inc/customizer.php:76
+#: inc/customizer.php:101
 msgid "Enable/disable slider"
 msgstr "Activer/désactiver le curseur"
 
-#: inc/customizer.php:90 inc/customizer.php:244
+#: inc/customizer.php:115
 msgid "Slider visibility"
 msgstr "Visibilité du curseur"
 
-#: inc/customizer.php:96
+#: inc/customizer.php:121
 msgid "Only on Front page"
 msgstr "Uniquement sur la première page"
 
-#: inc/customizer.php:97
+#: inc/customizer.php:122
 msgid "On all pages"
 msgstr "Sur toutes les pages"
 
-#: inc/customizer.php:108
+#: inc/customizer.php:133
 msgid "Get slides from"
 msgstr "Obtenir des diapositives à partir de"
 
-#: inc/customizer.php:116
+#: inc/customizer.php:141
 msgid "Recent Posts (Default)"
 msgstr "Messages récents (par défaut)"
 
-#: inc/customizer.php:117
+#: inc/customizer.php:142
 msgid "Sticky Posts (Recommended)"
 msgstr "Sticky messages (recommandés)"
 
-#: inc/customizer.php:118
+#: inc/customizer.php:143
 msgid "Specific Category"
 msgstr "D'une catégorie spécifique"
 
-#: inc/customizer.php:130
+#: inc/customizer.php:155
 msgid "Category slug to get slides from (only if Specific Category selected)"
 msgstr ""
-"Limace de catégorie pour obtenir les diapositives (seulement si la "
-"catégorie sélectionnée)"
+"Limace de catégorie pour obtenir les diapositives (seulement si la catégorie "
+"sélectionnée)"
 
-#: inc/customizer.php:144
+#: inc/customizer.php:169
 msgid "Slides number to show"
 msgstr "Nombre de diapositives à afficher"
 
-#: inc/customizer.php:163
+#: inc/customizer.php:188
 msgid "Show/hide slider banner"
 msgstr "Bannière de curseur afficher/masquer"
 
-#: inc/customizer.php:172 inc/customizer.php:299 inc/template-actions.php:77
-#: inc/template-tags.php:337
+#: inc/customizer.php:197 inc/customizer.php:324 inc/template-actions.php:77
+#: inc/template-tags.php:345
 msgid "Read"
 msgstr "Lire"
 
-#: inc/customizer.php:177
+#: inc/customizer.php:202
 msgid "Banner read more button text"
 msgstr "Lire le texte du bouton plus de bannière"
 
-#: inc/customizer.php:191
+#: inc/customizer.php:216
 msgid "Show/hide control arrows"
 msgstr "Afficher/masquer les flèches de contrôle"
 
-#: inc/customizer.php:205
+#: inc/customizer.php:230
 msgid "Show/hide pager control"
 msgstr "Afficher/masquer contrôle pager"
 
-#: inc/customizer.php:219
+#: inc/customizer.php:244
 msgid "Select animation type"
 msgstr "Choisissez votre type d'animation."
 
-#: inc/customizer.php:225
+#: inc/customizer.php:250
 msgid "Slide"
 msgstr "Diapositive"
 
-#: inc/customizer.php:226
+#: inc/customizer.php:251
 msgid "Fade"
 msgstr "Fondu"
 
-#: inc/customizer.php:233
+#: inc/customizer.php:258
 msgid "Blog"
 msgstr "Blog"
 
-#: inc/customizer.php:250
+#: inc/customizer.php:269
+msgid "Blog content shows:"
+msgstr ""
+
+#: inc/customizer.php:275
 msgid "Only excerpt"
 msgstr "Extrait seulement"
 
-#: inc/customizer.php:251
+#: inc/customizer.php:276
 msgid "Full content"
 msgstr "Contenu complet"
 
-#: inc/customizer.php:262
+#: inc/customizer.php:287
 msgid "Loop page: show featured image"
 msgstr "Page de boucle : image de voir la vedette"
 
-#: inc/customizer.php:276
+#: inc/customizer.php:301
 msgid "Single page: show featured image"
 msgstr "Seule page : image de voir la vedette"
 
-#: inc/customizer.php:290
+#: inc/customizer.php:315
 msgid "Loop page: show read more button"
 msgstr "Page de boucle : Voir la lire plus de bouton"
 
-#: inc/customizer.php:304
+#: inc/customizer.php:329
 msgid "Loop page: read more button text"
 msgstr "Page de boucle : lire le texte du bouton plus"
 
-#: inc/customizer.php:318
+#: inc/customizer.php:343
 msgid "Sidebar position"
 msgstr "Position de la barre latérale"
 
-#: inc/customizer.php:324
+#: inc/customizer.php:349
 msgid "Right"
 msgstr "Droite"
 
-#: inc/customizer.php:325
+#: inc/customizer.php:350
 msgid "Left"
 msgstr "Gauche"
 
-#: inc/customizer.php:332
+#: inc/customizer.php:357
 msgid "Footer"
 msgstr "Pied de page"
 
-#: inc/customizer.php:343
+#: inc/customizer.php:368
 msgid "Set custom copyright text"
 msgstr "Texte du Copyright personnalisé"
 
-#: inc/customizer.php:353
+#: inc/customizer.php:378
 msgid "About box"
 msgstr "À propos de"
 
-#: inc/customizer.php:364
+#: inc/customizer.php:389
 msgid "Enable About box in sidebar"
 msgstr "Activer sur la boîte dans la barre latérale"
 
-#: inc/customizer.php:373 inc/template-actions.php:175
+#: inc/customizer.php:398 inc/template-actions.php:185
 msgid "About Me"
 msgstr "A propos de moi"
 
-#: inc/customizer.php:378
+#: inc/customizer.php:403
 msgid "Enter sidebar about box title"
 msgstr "Entrer dans la barre latérale sur le titre de la boîte"
 
-#: inc/customizer.php:393
+#: inc/customizer.php:418
 msgid "About Image"
 msgstr "Sur l'Image"
 
-#: inc/customizer.php:401 inc/template-actions.php:177
+#: inc/customizer.php:426 inc/template-actions.php:187
 msgid "Hello! And welcome to my personal website!"
 msgstr "Salut! Et Bienvenue sur mon site perso !"
 
-#: inc/customizer.php:406
+#: inc/customizer.php:431
 msgid "Set about box message text"
 msgstr "Mis sur le texte du message box"
 
-#: inc/customizer.php:416
+#: inc/customizer.php:441
 msgid "Follow box"
 msgstr "Suivez boîte"
 
-#: inc/customizer.php:427
+#: inc/customizer.php:452
 msgid "Enable Follow box in sidebar"
 msgstr "Cochez la case de suivi dans la barre latérale"
 
-#: inc/customizer.php:436 inc/template-actions.php:206
+#: inc/customizer.php:461 inc/template-actions.php:216
 msgid "Follow Me"
 msgstr "Me suivre"
 
-#: inc/customizer.php:441
+#: inc/customizer.php:466
 msgid "Enter follow about box title"
 msgstr "Entrez Suivez sur titre de boîte"
 
-#: inc/customizer.php:464
+#: inc/customizer.php:489
 #, php-format
 msgid "Link to %s account:"
 msgstr "Lien vers %s compte :"
 
-#: inc/extras.php:36
+#: inc/extras.php:46
 msgid "Facebook"
 msgstr "Lien Facebook"
 
-#: inc/extras.php:41
+#: inc/extras.php:52
 msgid "Twitter"
 msgstr "Suivez-nous sur Twitter"
 
-#: inc/extras.php:46
+#: inc/extras.php:58
 msgid "Google +"
 msgstr "Google +"
 
-#: inc/extras.php:51
+#: inc/extras.php:64
 msgid "Instagram"
 msgstr "Instagram"
 
-#: inc/extras.php:56
+#: inc/extras.php:70
 msgid "Pinterest"
 msgstr "Pinterest"
 
-#: inc/extras.php:61
+#: inc/extras.php:76
 msgid "Dribbble"
 msgstr "Lien Dribble"
 
-#: inc/extras.php:79
+#: inc/extras.php:95
 msgid "Pingback:"
 msgstr "Rétrolien :"
 
-#: inc/extras.php:79
+#: inc/extras.php:95
 msgid "Edit"
 msgstr "Modifier"
 
-#: inc/extras.php:93
+#: inc/extras.php:109
 msgid "ago"
 msgstr "il y a"
 
-#: inc/extras.php:109
+#: inc/extras.php:119
+msgid "Reply"
+msgstr ""
+
+#: inc/extras.php:126
 msgid "Your comment is awaiting moderation."
 msgstr "Votre commentaire est en attente de modération."
 
-#: inc/template-actions.php:247
+#: inc/template-actions.php:259
 msgid "Name"
 msgstr "Nom"
 
-#: inc/template-actions.php:248
+#: inc/template-actions.php:260
 msgid "Email"
 msgstr "Adresse de contact"
 
-#: inc/template-actions.php:249
+#: inc/template-actions.php:261
 msgid "Website"
 msgstr "Site"
 
-#: inc/template-tags.php:57
+#: inc/template-tags.php:63
 msgid "Leave a comment"
 msgstr "Laisser un commentaire"
 
-#: inc/template-tags.php:57
+#: inc/template-tags.php:63
 msgid "1 Comment"
 msgstr "Un commentaire"
 
-#: inc/template-tags.php:57
+#: inc/template-tags.php:63
 msgid "% Comments"
 msgstr "% commentaires"
 
-#: inc/template-tags.php:69 inc/template-tags.php:85
+#: inc/template-tags.php:75 inc/template-tags.php:93
 msgid ", "
 msgstr ","
 
-#: inc/template-tags.php:71
+#: inc/template-tags.php:79
 #, php-format
 msgid "Posted in %1$s"
 msgstr "Publié dans  %1$s"
 
-#: inc/template-tags.php:87
+#: inc/template-tags.php:97
 #, php-format
 msgid "Tagged %1$s"
 msgstr "Identifié %1$s"
 
-#: inc/template-tags.php:173
+#: inc/template-tags.php:183
 #, php-format
 msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 "Continuer la lecture<span class=\"screen-reader-text\"> de %s</span>&nbsp;"
 "<span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/template-tags.php:178 template-parts/content-page.php:18
+#: inc/template-tags.php:188 template-parts/content-page.php:18
 #: template-parts/content-single.php:35
 msgid "Pages:"
 msgstr "Pages&nbsp;:"
 
-#: search.php:16
-#, php-format
-msgid "Search Results for: %s"
-msgstr "Résultats de recherche pour %s"
+#: template-parts/404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "Oups&nbsp;! Cette page est introuvable."
+
+#: template-parts/404.php:18
+msgid ""
+"It looks like nothing was found at this location. Maybe try to use a search?"
+msgstr "Essayez d’utiliser la recherche."
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"
@@ -407,10 +408,36 @@ msgstr ""
 "Il semblerait que nous ne soyons pas en mesure de trouver votre contenu. "
 "Essayez en lançant une recherche."
 
-#: template-parts/content-single.php:46
+#: template-parts/content-single.php:49
 msgid "Prev"
 msgstr "Précédent"
 
-#: template-parts/content-single.php:47
+#: template-parts/content-single.php:50
 msgid "Next"
 msgstr "Suivant"
+
+#: template-parts/footer.php:38
+msgid "http://wordpress.org/"
+msgstr "http://wordpress.org/"
+
+#: template-parts/footer.php:38
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Propulsé par %s"
+
+#: template-parts/footer.php:40
+#, php-format
+msgid "Theme: %1$s by <a href=\"%2$s\" rel=\"nofollow\">Crocoblock</a>."
+msgstr ""
+
+#: template-parts/header.php:22
+msgid "Menu"
+msgstr "Menu"
+
+#: template-parts/search.php:15
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Résultats de recherche pour %s"
+
+#~ msgid "Theme: %1$s by <a href=\"%2$s\" rel=\"nofollow\">Tefox</a>."
+#~ msgstr "Thème : %1$s par <a href=\"%2$s\" rel=\"nofollow\">Tefox</a>."
