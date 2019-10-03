@@ -126,6 +126,9 @@ function azeria_setup() {
 		'default-color' => 'f3f3f3',
 		'default-image' => '',
 	) ) );
+
+	// Add theme support for selective refresh for widgets.
+	add_theme_support( 'customize-selective-refresh-widgets' );
 }
 endif; // azeria_setup
 add_action( 'after_setup_theme', 'azeria_setup' );
