@@ -3,7 +3,7 @@
 Contributors: Crocoblock
 Tags: translation-ready, custom-background, theme-options, custom-menu, post-formats, threaded-comments
 
-Requires at least: 5.2
+Requires at least: 4.7
 Tested up to: 5.2
 Stable tag: 1.2.0
 License: GPLv2 or later
@@ -71,6 +71,6 @@ Azeria responsive WordPress theme is here for your reference. Clean minimalistic
 * Magnific Popup - http://dimsemenov.com/plugins/magnific-popup/ licensed under MIT License (MIT) Copyright (c) 2015 Dmitry Semenov
 * slick.js - Ken Wheeler, http://kenwheeler.github.io, licensed under MIT License (MIT)
 * other CSS and JS files licensed under GPLv2+
-* The image screenshot.png created by teFox team and licensed under GPL v2+
+* The image screenshot.png created by Crocoblock team and licensed under GPL v2+
 * Google fonts used in theme released under the Apache License, version 2.0 and SIL Open Font License 1.1
 * jQuery Stick Up plugin created by @LiranCohen - https://github.com/LiranCohen/stickUp, licensed under GNU GPL
