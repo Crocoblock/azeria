@@ -59,6 +59,8 @@ Azeria responsive WordPress theme is here for your reference. Clean minimalistic
 
 = 1.2.0 =
 * ADD: compatibility with Elementor and JetTheme Core plugins
+* ADD: support of `wp_body_open` function
+* ADD: theme support for selective refresh for widgets
 * UPD: minimized vendor js scripts
 * UPD: replacing font icons with SVG icons
 
