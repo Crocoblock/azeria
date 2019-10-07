@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: azeria 1.0.2\n"
-"POT-Creation-Date: 2019-10-02 17:39+0300\n"
+"POT-Creation-Date: 2019-10-07 16:55+0300\n"
 "PO-Revision-Date: 2015-10-11 14:41+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -50,23 +50,23 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:140
+#: functions.php:158
 msgid "Sidebar"
 msgstr ""
 
-#: functions.php:149
+#: functions.php:167
 msgid "Footer Sidebar Left"
 msgstr ""
 
-#: functions.php:158
+#: functions.php:176
 msgid "Footer Sidebar Midlle"
 msgstr ""
 
-#: functions.php:167
+#: functions.php:185
 msgid "Footer Sidebar Right"
 msgstr ""
 
-#: functions.php:224 functions.php:230 functions.php:236
+#: functions.php:246 functions.php:252 functions.php:258
 msgid "on"
 msgstr ""
 
