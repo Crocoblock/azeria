@@ -1,0 +1,105 @@
+/*!
+Renard Editor Styles
+*/
+
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/** === Content Width === */
+
+.wp-block {
+	max-width: calc(100% - 60px);
+
+	@media( min-width: 600px ) {
+		max-width: 1170px;
+	}
+
+	// Only the top level blocks need specific widths, therefore override for every nested block.
+	.wp-block {
+		width: 100%;
+	}
+}
+
+/** === Base Typography === */
+
+body {
+	color: $color__text-main;
+	font-family: $font__main;
+	@include font-size(1);
+	line-height: $font__line-height-body;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+	padding: 0 0 20px 0;
+	margin: 0;
+	font-family: $font__alt;
+	color: $color__text-headings;
+	line-height: 1.2;
+}
+
+h1 {
+	@include font-size(2.15);
+}
+h2 {
+	@include font-size(2);
+}
+h3 {
+	@include font-size(1.8);
+}
+h4 {
+	@include font-size(1.6);
+}
+h5 {
+	@include font-size(1.4);
+}
+h6 {
+	@include font-size(1.2);
+}
+
+@media (max-width: 767px) {
+	h1 {
+		@include font-size(1.8);
+	}
+	h2 {
+		@include font-size(1.6);
+	}
+	h3 {
+		@include font-size(1.4);
+	}
+	h4 {
+		@include font-size(1.2);
+	}
+	h5 {
+		@include font-size(1.1);
+	}
+	h6 {
+		@include font-size(1);
+	}
+}
+
+p {
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+
+a {
+	color: $color__link;
+	transition: all 200ms linear;
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}

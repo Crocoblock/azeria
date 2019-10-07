@@ -1,0 +1,91 @@
+/*!
+Renard Editor Styles
+*/
+/** === Content Width === */
+.wp-block {
+  max-width: calc(100% - 60px); }
+  @media (min-width: 600px) {
+    .wp-block {
+      max-width: 1170px; } }
+  .wp-block .wp-block {
+    width: 100%; }
+
+/** === Base Typography === */
+body {
+  color: #474747;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-size: 1rem;
+  line-height: 2; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  padding: 0 0 20px 0;
+  margin: 0;
+  font-family: "Open Sans Condensed", sans-serif;
+  color: #000000;
+  line-height: 1.2; }
+
+h1 {
+  font-size: 27.95px;
+  font-size: 2.15rem; }
+
+h2 {
+  font-size: 26px;
+  font-size: 2rem; }
+
+h3 {
+  font-size: 23.4px;
+  font-size: 1.8rem; }
+
+h4 {
+  font-size: 20.8px;
+  font-size: 1.6rem; }
+
+h5 {
+  font-size: 18.2px;
+  font-size: 1.4rem; }
+
+h6 {
+  font-size: 15.6px;
+  font-size: 1.2rem; }
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 23.4px;
+    font-size: 1.8rem; }
+
+  h2 {
+    font-size: 20.8px;
+    font-size: 1.6rem; }
+
+  h3 {
+    font-size: 18.2px;
+    font-size: 1.4rem; }
+
+  h4 {
+    font-size: 15.6px;
+    font-size: 1.2rem; }
+
+  h5 {
+    font-size: 14.3px;
+    font-size: 1.1rem; }
+
+  h6 {
+    font-size: 13px;
+    font-size: 1rem; } }
+p {
+  margin: 0;
+  padding: 0 0 20px 0; }
+
+a {
+  color: #ff5400;
+  transition: all 200ms linear; }
+  a:visited {
+    color: #ff5400; }
+  a:hover, a:focus, a:active {
+    color: #2b5387; }
+  a:focus {
+    outline: thin dotted; }
+  a:hover, a:active {
+    outline: 0; }
